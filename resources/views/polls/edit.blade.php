@@ -2,7 +2,7 @@
 
 @section('content')
 
-<form action="{{ action('PollController@update') }}" method="post">
+<form action="{{ action('PollController@update', [$poll->id]) }}" method="post">
     @csrf
     <label class="mb-2">
         Poll name:
