@@ -24,3 +24,4 @@ Route::get('/polls/{id}/edit', 'PollController@edit');
 Route::get('/polls/create', 'PollController@create');
 Route::post('/polls', 'PollController@store');
 Route::post('/polls/{id}', 'PollController@update');
+Route::get('/polls/list', 'VoteController@index');
